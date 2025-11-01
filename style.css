@@ -1,0 +1,260 @@
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #e3edf7;
+    overflow-x: hidden;
+}
+header {
+    padding: 1rem;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(0deg, #f5b6f1 0%, #faccf0 51%, #f9b9f8 100%);
+    transition: 1.3s;
+}
+header{
+    display: flex;
+}
+header .logo {
+    font-size: 2rem;
+    font-weight: 500;
+}
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+
+ul.navlist {
+    display: flex;
+    
+}
+
+.navlist li {
+    margin: 0 1rem;
+}
+
+.navlist li a {
+    display: inline-flex;
+    font-weight: 600;
+}
+
+.navlist li a:hover{
+    color:#78063c
+    
+}
+
+
+
+
+
+
+
+
+section {
+    padding: 90px 8%;
+}
+
+.home {
+    min-height: 100vh;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    grid-gap: 4em;
+    background: linear-gradient(98deg, #da9ee6 0%, #fff 100%);
+}
+
+.hero{
+    margin-top: 3rem;
+}
+
+.hero h3 {
+    color: #a736ad;
+    font-weight: 400;
+}
+
+.hero h1 {
+    font-size: 3rem;
+}
+
+.text {
+    color: #a117b9;
+}
+.hero p {
+    font-size: .9rem;
+    color: #90979f;
+    line-height: 1.5rem;
+}
+
+.img{
+
+    background-image: url(image/WhatsApp\ Image\ 2025-11-01\ at\ 13.55.20.jpeg);
+    padding: 250px;
+    margin: 100px;
+    border-radius: 90%;
+    background-size: 100%;
+    transform:translate(20px,10px) rotate(10deg)scale(1.05); 
+  object-fit: cover;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  position: sticky;
+}
+
+
+
+/* aboutme */
+
+.about{
+    text-align: center;
+    padding:4rem  10%;
+    background: linear-gradient(98deg, #da9ee6 0%, #fff 100%);
+
+}
+.about h2{
+    font-size: 2rem;
+    margin-bottom: 3rem;
+}
+
+/* skills */
+
+.skills{
+    text-align: center;
+    background:linear-gradient(98deg, #da9ee6 0%, #fff 100%) ; 
+}
+.skills h2{
+    color: black;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+
+}
+.skillsbox{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+.skill{
+    background:rgb(234, 152, 227);
+    border: 2px solid rgb(140, 132, 132);
+    border-radius: 2.5rem;
+    font-weight: 550;
+    padding: 10px 1.5rem;
+    transition: 0.5s ease;
+    cursor: default;
+}
+.skill:hover{
+    background: rgb(156, 62, 148);
+    color: white;
+    transform: scale(2s);
+}
+
+/* project */
+
+.project{
+    padding: 4rem 10%;
+    background:linear-gradient(98deg, #da9ee6 0%, #fff 100%) ;
+    text-align: center;
+}
+.project h2{
+    margin-bottom: 2rem;
+}
+.projectbox{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap:1.5rem ;
+}
+.projectbox h4{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.project1{
+    background:rgb(244, 167, 238);
+    border: 2px solid rgb(140, 132, 132);
+    border-radius: 1rem;
+    width: 280px;
+    transition: 0.3s ease;
+}
+.project1:hover{
+       background: rgb(156, 62, 148);
+       color: white;
+
+}
+.project1 button{
+    background:rgb(225, 135, 218);
+    color: white;
+    border-radius: 1rem;
+    border: none;
+    margin:1rem;
+    padding:8px 16px ;
+    cursor: pointer;
+}
+.projectbox button:hover{
+
+background: rgb(244, 167, 238);;
+}
+/* contect */
+.contect{
+      background:linear-gradient(98deg, #da9ee6 0%, #fff 100%) ;
+      text-align: center;
+      padding: 4rem 10%;
+}
+.contect h2{
+    margin-bottom: 2rem;
+
+}
+form{
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  max-width: 400px;
+  margin: auto;
+}
+
+form input, form textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-family: inherit;
+}
+
+form button {
+  padding: 10px 20px;
+  border: none;
+  background:rgb(244, 167, 238);
+  color: #000000;
+  border-radius:1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 1.2rem;
+}
+
+form button:hover {
+   background: rgb(156, 62, 148);
+       color: white;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  padding-bottom: 1.5rem;
+  background: rgb(173, 67, 164);
+  font-size: 1.2rem;
+  color: #0a0a0a;
+}
+
